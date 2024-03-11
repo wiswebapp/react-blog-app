@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     // let clickAboutUs = 0;
@@ -18,7 +19,10 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                        <a className="nav-link" href="/">Home</a>
+                        <Link className="nav-link" to="/">Home</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/create">Create New Blog</Link>
                     </li>
                     <li className="nav-item"><a className="nav-link" style={{cursor: "pointer"}} onClick={aboutUsText}>About Us</a></li>
                     <li className="nav-item "><a className="nav-link disabled">You clicked {aboutUsClickTxt} times</a></li>

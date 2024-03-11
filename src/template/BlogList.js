@@ -21,8 +21,8 @@ const BlogList = ({title, today, blogs, handleDelete, isLoading}) => {
                 ))
                 :
                 ((isLoading) ?
-                    <div>
-                        <h3 className="display-4">Please wait <img src="https://i.stack.imgur.com/kOnzy.gif" style={{height:50}} alt="Loading" /></h3>
+                    <div align="center">
+                        <h6 className="display-6">Please wait <img src="https://i.stack.imgur.com/kOnzy.gif" style={{height:50}} alt="Loading" /></h6>
                     </div>
                     :
                     <figure className="text-center">
